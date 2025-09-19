@@ -124,17 +124,21 @@ const UpdateProject = () => {
               WebkitBackdropFilter: "blur(3.5px) saturate(120%)",
             }} >
             <div className="flex-1 flex flex-col items-center text-center">
-              <h3
-                className="text-2xl sm:text-2.5xl md:text-[1.7rem] font-extrabold text-sky-900 mb-4 text-center truncate w-full"
-                style={{
-                  fontFamily: "'Tajawal', 'Cairo', sans-serif",
-                  textShadow: "0 2px 10px rgba(30,41,59,0.10)",
-                  letterSpacing: "0.02em",
-                }}
-                title={p.name}
-              >
-                {p.name}
-              </h3>
+              <div className="w-full flex flex-col items-center mb-6 relative">
+                <h3
+                  className="text-2xl sm:text-[1.5rem] md:text-[1.7rem] font-extrabold text-sky-900 text-center truncate w-full z-10"
+                  style={{
+                    fontFamily: "'Tajawal', 'Cairo', sans-serif",
+                    textShadow: "0 2px 10px rgba(30,41,59,0.10)",
+                    letterSpacing: "0.02em",
+                    marginBottom: "18px",
+                  }}
+                  title={p.name}
+                >
+                  {p.name}
+                  <hr className="font-extrabold mt-4"/>
+                </h3>
+              </div>
               <div className="flex flex-col gap-1 items-center justify-center mb-4 w-full">
                 <div className="flex flex-col gap-2 items-center justify-center mb-6 w-full">
                   <div className="flex flex-row items-center gap-2 w-auto">
@@ -143,21 +147,25 @@ const UpdateProject = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
                     </span>
-                    <span className="font-bold truncate max-w-[120px] text-gray-700 text-center">{p.engineer}</span>
+                    <span className="font-bold truncate max-w-[120px] text-gray-800 text-center">{p.engineer}</span>
                   </div>
                 </div>
               </div>
               <div
-                className="rounded-lg px-3 py-2 text-sky-800 text-xs sm:text-sm text-center mb-4 min-h-[38px] border border-blue-50 bg-blue-50/60 w-full"
+                className="rounded-xl px-5 py-2.5 text-sky-800 text-sm sm:text-base text-center mb-5 min-h-[48px] sm:min-h-[56px] border border-blue-100 shadow w-full"
                 style={{
+                  background: "rgba(245,250,255,0.92)",
+                  color: "#0369a1",
                   fontFamily: "'Tajawal', 'Cairo', sans-serif",
+                  backdropFilter: "blur(2px)",
+                  WebkitBackdropFilter: "blur(2px)",
                   fontWeight: 500,
                 }}
               >
                 {p.description ? (
-                  <span className="line-clamp-2 text-gray-700">{p.description}</span>
+                  <span className="line-clamp-2 text-gray-700 text-center w-full block font-semibold italic">{p.description}</span>
                 ) : (
-                  <span className="italic text-gray-400">لا يوجد وصف للمشروع</span>
+                  <span className="italic text-gray-400 text-center w-full block">لا يوجد وصف للمشروع</span>
                 )}
               </div>
             </div>

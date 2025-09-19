@@ -75,8 +75,8 @@ const ProjectDetails = () => {
                 textShadow: "0 2px 16px rgba(30,41,59,0.14)",
               }}
             >
-              <span className="inline-block bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 px-6 py-2 rounded-2xl shadow text-blue-900">
-                تفاصيل المشروع: <span className="text-blue-800">{project.name}</span>
+              <span className="inline-block bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 px-6 py-2 rounded-2xl shadow text-gray-700">
+              {project.name}  <span className="text-blue-800"> :تفاصيل المشروع</span>
               </span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">

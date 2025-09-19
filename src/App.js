@@ -18,7 +18,7 @@ import MonthlyProjectsData from "./update/MonthlyProjectsData";
 import MonthlyWorkerData from "./update/MonthlyWorkerData";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(null); // null = لسه مش معروف
+  const [isLoggedIn, setIsLoggedIn] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -180,7 +180,6 @@ function App() {
             transition: "background-image 0.5s, background-size 0.5s, filter 0.5s",
             willChange: "background-image, background-size, filter",
             opacity: 1,
-            // animation removed
             overflowX: "hidden",
           }}
         />

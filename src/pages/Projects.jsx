@@ -130,6 +130,8 @@ const Projects = () => {
                 title={p.name}
               >
                 {p.name}
+                <hr className="font-extrabold mt-4"/>
+
               </h3>
               <div className="flex flex-col gap-2 items-center justify-center mb-6 w-full">
                 <div className="flex flex-row items-center gap-2 w-auto">
@@ -138,7 +140,7 @@ const Projects = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </span>
-                  <span className="font-bold truncate max-w-[120px] text-gray-700 text-center">{p.engineer}</span>
+                  <span className="font-bold truncate max-w-[120px] text-gray-800 text-center">{p.engineer}</span>
                 </div>
               </div>
               <div
@@ -153,7 +155,7 @@ const Projects = () => {
                 }}
               >
                 {p.description ? (
-                  <span className="line-clamp-2 text-gray-700 text-center w-full block">{p.description}</span>
+                  <span className="line-clamp-2 text-gray-700 text-center w-full block font-semibold italic">{p.description}</span>
                 ) : (
                   <span className="italic text-gray-400 text-center w-full block">لا يوجد وصف للمشروع</span>
                 )}
