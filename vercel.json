@@ -1,8 +1,8 @@
 {
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/"
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://alemam-b.vercel.app/api/$1"
+    }
+  ]
+}

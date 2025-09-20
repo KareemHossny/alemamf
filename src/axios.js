@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://alemam-b.vercel.app/api",
-  withCredentials: true, 
+  baseURL: "/api", 
+  withCredentials: true, // عشان الكوكي تتبعت
 });
 
 export default API;
